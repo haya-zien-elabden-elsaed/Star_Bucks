@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Starbucks</title>
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href=""><img  class="logo" src="image/logo.png" alt=""></a>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Menu</a></li>
+                <li><a href="">What is New</a></li>
+                <li><a href="">Contact</a></li>
+
+            </ul>
+        
+        </header>
+
+    <div class="contact">
+        <div class="textbox">
+            <h2>It`s not just Coffee<br>It`s<span>Starbucks</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, optio enim dicta ipsa ullam, accusamus ea soluta corrupti saepe voluptatibus illum ratione. Optio quisquam quo ducimus sunt necessitatibus aliquam est!
+            Voluptate nesciunt praesentium odit? Consectetur expedita saepe voluptatem consequuntur corporis, molestiae veniam nesciunt vel provident magnam alias quisquam accusantium inventore nostrum placeat culpa neque in. Quis perferendis officia deserunt modi!</p>
+            <a href="">Learn More</a>
+        </div>
+        
+    <div class="imgbox">
+        <img src="image/img1.png" alt="" class="starbucks">
+    </div>
+    </div>
+
+    <ul class="thumb">
+        <li><img  src="image/thumb1.png" onclick="imglider('image/img1.png');changeCircleColor('#017143')" alt=""></li>        
+        <li><img src="image/thumb2.png" onclick="imglider('image/img2.png');changeCircleColor('#eb7495')" alt=""></li>
+        <li><img src="image/thumb3.png" onclick="imglider('image/img3.png');changeCircleColor('#b752b1')" alt=""></li>
+
+    </ul>
+
+    <ul class="sci">
+        <li><a href=""><img src="image/facebook.png" alt=""></a></li>     
+        <li><a href=""><img src="image/twitter.png" alt=""></a></li>
+        <li><a href=""><img src="image/instagram.png" alt=""></a></li>
+
+    </ul>
+
+
+    </section>
+
+<script type="text/javascript" >
+    function imglider(anything){
+        document.querySelector('.starbucks').src = anything;
+    }
+    function changeCircleColor(color){
+        const circle = document.querySelector('.circle');
+        circle.style.background = color;
+    }
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
